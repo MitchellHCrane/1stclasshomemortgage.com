@@ -4,7 +4,6 @@ import "../css/getStartedItem.css";
 import ApplicationIcon from "../images/get-started-icons/application.svg";
 import LoanEducationIcon from "../images/get-started-icons/loan-education.svg";
 import UploadDocumentIcon from "../images/get-started-icons/upload-documents.svg";
-import ArrowRight from "../images/get-started-icons/arrow-right.svg";
 import PeaceHand from "../images/get-started-icons/peaceHand.svg";
 import reviewIcon from "../images/get-started-icons/review.svg";
 
@@ -35,10 +34,7 @@ function GetStartedItem(props) {
         <h3 className="getStartedCard">{props.title}</h3>
         <p className="getStartedCardP">{props.description}</p>
       </div>
-      <a href={props.url} target="_blank" rel="noreferrer" className="cardLink">
-        {props.btnText}
-        <img src={ArrowRight} alt="Arrow right icon" />
-      </a>
+
     </div>
   );
 }

@@ -23,16 +23,20 @@ function Profile() {
           />
         </div>
         <div>
-          <h1 className="profileName">Troy Warner</h1>
-          <h2 className="NMLS">Mortgage Banker (NMLS #102983)</h2>
+          <h1 className="profileName">First Class Home Mortgage</h1>
+          <h2 className="NMLS">NMLS#1843</h2>
           <p className="profileP">
-            Hello! I’m Troy, I look forward to helping you along your home
-            buying experience. I’ve provided a few useful links to get you
-            started.
+            We take the hassle out of your home buying experience. Contact us
+            today and we will find the right solution for your needs.
           </p>
           <div className="buttonBlueDiv">
-            <a href="#getStarted" className="buttonBlue">
-              Get Started
+            <a href="tel:385-999-1871" className="buttonBlue">
+              Call Us
+            </a>
+          </div>
+          <div className="buttonBlueDiv">
+            <a href="mailto:loans@troywarner.com" className="buttonBlue">
+              Email Us
             </a>
           </div>
         </div>

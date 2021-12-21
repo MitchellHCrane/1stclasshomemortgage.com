@@ -13,42 +13,27 @@ function GetStarted() {
       </div>
       <div className="grid-container">
         <GetStartedItem
-          title="Loan Application"
-          description="Create your account to apply with
-          First Class Home Mortgage."
-          url="https://www.blink.mortgage/app/signup/p/firstclasshomemortgagellc/troywarner"
+          title="Home Purchases"
+          description="Looking to buy your first home, First Class Home Mortgage has a variety of loans to help you find the perfect solution."
+          // url=""
           iconName="applicationIcon"
-          btnText="Start Application"
+          // btnText="Start Application"
         />
 
         <GetStartedItem
-          title="Framework Loan Education"
-          description="Educate yourself for smart homeownership with Framework, you’ll navigate every step of the process with confidence at no cost to you."
-          url="https://uwm.frameworkhomeownership.org/"
-          iconName="loanEducationIcon"
-          btnText="Start Learning"
+          title="Credit Problems?"
+          description="We have mortgage loans to help you walk through all the options available to you."
+          // url=""
+          iconName="applicationIcon"
+          // btnText="Start Learning"
         />
 
         <GetStartedItem
-          title="Upload Documents"
-          description="Safely and securely send documents through DocumentGuardian."
-          url="https://documentguardian.com/filedrop/loans@troywarner.com"
-          iconName="uploadDocumentIcon"
-          btnText="Upload Documents"
-        />
-        <GetStartedItem
-          title="Get Free Swag"
-          description="Thank you for choosing First Class Home Mortgage to be a part of your home buying experience. Fill out a simple form and get swag!"
-          url="https://elevatepromo.com/fchm_thankyou/"
-          iconName="peaceHand"
-          btnText="Get Swag"
-        />
-        <GetStartedItem
-          title="Leave a Review"
-          description="Thank you for choosing First Class Home Mortgage. It’s our priority to continue providing quality service to our customers. Tell us about your experience."
-          url="https://g.page/r/CStPPIWpW1rHEAg/review"
-          iconName="reviewIcon"
-          btnText="Write Review"
+          title="Debt Consolidation"
+          description="Tired of paying minimum payments on high-interest-rate credit cards? First Class Home Mortgage can help."
+          // url=""
+          iconName="applicationIcon"
+          // btnText="Upload Documents"
         />
       </div>
     </div>
