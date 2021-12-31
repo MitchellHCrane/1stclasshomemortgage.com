@@ -38,6 +38,20 @@
 }
 
 @media (min-width: 768px) {
+  .profile-background {
+    background-image: url(../images/homeBackground.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+  }
+  .profileP {
+    color: #575757;
+  }
+
   .profile-div {
     padding: 8%;
     margin: 0 auto;
@@ -45,10 +59,6 @@
 
   .profileName {
     margin-top: 0px;
-  }
-
-  .particle-bg {
-    display: block;
   }
 
   .profile-grid {
@@ -62,6 +72,9 @@
 
   .troyProfilePic {
     padding-top: 0px;
+  }
+  div.btns {
+    display: block;
   }
 }
 

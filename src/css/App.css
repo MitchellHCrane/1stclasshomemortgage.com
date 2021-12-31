@@ -47,6 +47,10 @@ a {
   color: #2ca4f2;
 }
 
+.btns {
+  display: flex;
+}
+
 .buttonBlue {
   width: 100%;
   margin-top: 32px;
@@ -73,17 +77,75 @@ a {
   transition: 0.3s;
 }
 
+.buttonWhite {
+  width: 100%;
+  margin-top: 32px;
+  display: block;
+  margin: 32px 0px;
+  background-color: #ffffff;
+  border: 1px solid #2ca4f2;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #2ca4f2;
+  cursor: pointer;
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+  font-size: 18px;
+  font-weight: 900;
+  outline: none;
+  outline: 0;
+  padding: 8px 32px;
+  text-align: center;
+  transform: translateY(0);
+  user-select: none;
+  -webkit-user-select: none;
+  transition: 0.3s;
+}
+
 .buttonBlue:hover {
   box-shadow: 0px 8px 16px rgba(145, 149, 157, 0.3);
   transform: translateY(-2px);
   /* transition: all 3s ease-in-out; */
 }
+.buttonWhite:hover {
+  box-shadow: 0px 8px 16px rgba(145, 149, 157, 0.3);
+  transform: translateY(-2px);
+  /* transition: all 3s ease-in-out; */
+}
+
+@media (max-width: 768px) {
+  .btnsContact {
+    margin: 0 8%;
+  }
+  .btns {
+    display: block;
+  }
+  .buttonBlue {
+    width: 100%;
+    margin: 32px 0 0;
+    padding: 8px 16px;
+    font-size: 24px;
+  }
+  .buttonWhite {
+    width: 100%;
+    margin: 32px 0px 0;
+    padding: 8px 16px;
+    font-size: 24px;
+  }
+}
+
 
 @media (min-width: 1024px) {
   .buttonBlue {
-    width: fit-content;
+    width: 280px;
     margin: 32px 0 0;
-    padding: 16px 32px;
+    padding: 8px 16px;
+    font-size: 24px;
+  }
+  .buttonWhite {
+    width: 280px;
+    margin: 32px 0px 0;
+    padding: 8px 16px;
     font-size: 24px;
   }
 }

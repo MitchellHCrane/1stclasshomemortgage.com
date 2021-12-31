@@ -5,10 +5,11 @@ function GetStarted() {
   return (
     <div className="getStarted-div" id="getStarted">
       <div className="getStartedBackground">
-        <h2 className="getStartedH2">Resources</h2>
+        <h2 className="getStartedH2">We Can Help!</h2>
         <p className="getStartedP">
-          Here are some helpful links to get you started with the purchase of
-          your next home.
+          Take the stress out of buying a home by working with First Class Home
+          Mortgage specialists. Learn which home loan options are right for you
+          and how the mortgage process works. We guide you through each step.
         </p>
       </div>
       <div className="grid-container">
@@ -35,6 +36,18 @@ function GetStarted() {
           iconName="applicationIcon"
           // btnText="Upload Documents"
         />
+      </div>
+      <div className="btnsContact">
+        <div className="buttonBlueDiv">
+          <a href="tel:385-999-1871" className="buttonBlue">
+            Call 385-999-1871
+          </a>
+        </div>
+        <div className="buttonWhiteDiv">
+          <a href="mailto:loans@troywarner.com" className="buttonWhite">
+            Email Us
+          </a>
+        </div>
       </div>
     </div>
   );

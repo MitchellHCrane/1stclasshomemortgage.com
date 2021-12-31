@@ -9,7 +9,7 @@ function LoanCalculator() {
         <p>Get an estimate of your monthly mortgage payments.</p>
 
         <p className="small">
-          * For a more accurate estimate, get in touch with me and I will help
+          * For a more accurate estimate, get in touch with us and we will help
           you find the best solution for your needs.
         </p>
       </div>
