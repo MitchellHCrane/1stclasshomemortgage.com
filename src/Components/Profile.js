@@ -26,6 +26,7 @@ function Profile() {
                   Call 385-999-1871
                 </a>
               </div>
+              <h3 className="Or">OR</h3>
               <div className="buttonWhiteDiv">
                 <a href="mailto:loans@troywarner.com" className="buttonWhite">
                   Email Us

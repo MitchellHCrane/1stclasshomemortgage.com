@@ -37,18 +37,7 @@ function GetStarted() {
           // btnText="Upload Documents"
         />
       </div>
-      <div className="btnsContact">
-        <div className="buttonBlueDiv">
-          <a href="tel:385-999-1871" className="buttonBlue">
-            Call 385-999-1871
-          </a>
-        </div>
-        <div className="buttonWhiteDiv">
-          <a href="mailto:loans@troywarner.com" className="buttonWhite">
-            Email Us
-          </a>
-        </div>
-      </div>
+      <div><h3 className="callNow">Call 385-999-1871</h3></div>
     </div>
   );
 }

@@ -25,6 +25,13 @@
   justify-content: center;
 }
 
+.callNow{
+  text-align: center;
+  font-size: 24px;
+  margin-top: 40px;
+  color: #2ca4f2;
+}
+
 @media (min-width: 1024px) {
   .grid-container {
     grid-template-columns: auto auto auto;
