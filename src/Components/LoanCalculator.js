@@ -1,4 +1,3 @@
-import "../css/loanCalculator.css";
 import MortgageCalculator from "mortgage-calculator-react";
 
 function LoanCalculator() {

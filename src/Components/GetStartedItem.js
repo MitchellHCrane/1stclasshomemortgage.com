@@ -1,5 +1,3 @@
-import "../css/getStartedItem.css";
-
 // Icons
 import ApplicationIcon from "../images/get-started-icons/application.svg";
 import LoanEducationIcon from "../images/get-started-icons/loan-education.svg";
@@ -34,7 +32,6 @@ function GetStartedItem(props) {
         <h3 className="getStartedCard">{props.title}</h3>
         <p className="getStartedCardP">{props.description}</p>
       </div>
-
     </div>
   );
 }

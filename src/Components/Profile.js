@@ -1,6 +1,3 @@
-import "../css/profile.css";
-import "../css/App.css";
-
 function Profile() {
   return (
     <div className="profile-background">

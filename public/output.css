@@ -1,0 +1,1342 @@
+/*
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  /* 3 */
+  tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-48 {
+  margin-top: 12rem;
+}
+
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+/* Global Styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+  font-size: 24px;
+  font-weight: 900;
+  color: #004e82;
+  letter-spacing: 0.25px;
+}
+
+h2 {
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+  font-size: 24px;
+  font-weight: 900;
+  color: #004e82;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+  font-size: 24px;
+  font-weight: 900;
+  color: #004e82;
+  letter-spacing: 1px;
+}
+
+p,
+a,
+li {
+  font-family: "OpenSans", Helvetica, Arial;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+  color: #91959d;
+  line-height: 1.5;
+  letter-spacing: 0.75px;
+  margin-top: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #2ca4f2;
+}
+
+.btns {
+  display: flex;
+}
+
+.buttonBlue {
+  width: 100%;
+  margin-top: 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2ca4f2;
+  border: 1px solid #2ca4f2;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+  font-size: 18px;
+  font-weight: 900;
+  outline: none;
+  outline: 0;
+  padding: 8px 32px;
+  text-align: center;
+  transform: translateY(0);
+  user-select: none;
+  -webkit-user-select: none;
+  transition: 0.3s;
+}
+
+.buttonWhite {
+  width: 100%;
+  margin-top: 32px;
+  display: block;
+  margin: 32px 0px;
+  background-color: #ffffff;
+  border: 1px solid #2ca4f2;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #2ca4f2;
+  cursor: pointer;
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+  font-size: 18px;
+  font-weight: 900;
+  outline: none;
+  outline: 0;
+  padding: 8px 32px;
+  text-align: center;
+  transform: translateY(0);
+  user-select: none;
+  -webkit-user-select: none;
+  transition: 0.3s;
+}
+
+.buttonBlue:hover {
+  box-shadow: 0px 8px 16px rgba(145, 149, 157, 0.3);
+  transform: translateY(-2px);
+  /* transition: all 3s ease-in-out; */
+}
+
+.buttonWhite:hover {
+  box-shadow: 0px 8px 16px rgba(145, 149, 157, 0.3);
+  transform: translateY(-2px);
+  /* transition: all 3s ease-in-out; */
+}
+
+@media (max-width: 768px) {
+  .btnsContact {
+    margin: 0 8%;
+  }
+
+  .btns {
+    display: block;
+  }
+
+  .buttonBlue {
+    width: 100%;
+    margin: 16px 0 0;
+    padding: 8px 0px;
+    font-size: 16px;
+  }
+
+  .buttonWhite {
+    width: 100%;
+    margin: 8px 0px 0;
+    padding: 8px 0px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .buttonBlue {
+    width: 288px;
+    margin: 32px 0 0;
+    padding: 8px 0px;
+    font-size: 24px;
+  }
+
+  .buttonWhite {
+    width: 288px;
+    margin: 24px 0px 0;
+    padding: 8px 16px;
+    font-size: 24px;
+  }
+}
+
+/* Footer  */
+
+/* Footer Styles */
+
+footer {
+  padding-bottom: 36px;
+  background: #004e82;
+  /* padding: 32px 8px; */
+  width: 100%;
+  margin-top: 200px;
+}
+
+.footer-div {
+  display: grid;
+  max-width: 1024px;
+}
+
+.footerGridItem {
+  margin-top: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.footerH3,
+.footerP {
+  color: #fff;
+  margin: 0;
+}
+
+.footerH3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.footerP,
+.footerP a {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+
+@media (min-width: 1024px) {
+  .footer-div {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: center;
+    text-align: center;
+    padding: 64px 0px;
+    grid-gap: 48px;
+    margin: 0 auto;
+  }
+
+  .footerGridItem {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+/* Get Started  */
+
+.getStarted-div {
+  background-color: #fff;
+  margin: 0 0 64px;
+}
+
+.getStartedBackground {
+  background-image: url(../images/getStartedBackground.png);
+  background-color: #2ca4f2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 64px 8% 160px;
+}
+
+.getStartedH2 {
+  font-size: 36px;
+}
+
+.grid-container {
+  max-width: 1024px;
+  margin: -96px auto 0;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+
+.callNow{
+  text-align: center;
+  font-size: 24px;
+  margin-top: 40px;
+  color: #2ca4f2;
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+/* Get started Item  */
+
+.getStartedH2,
+.getStartedP {
+  color: #fff;
+  text-align: center;
+}
+
+.getStartedP {
+  font-size: 18px;
+}
+
+.grid-item {
+  position: relative;
+  padding: 64px 16px 32px;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 32px 8%;
+  box-shadow: 0px 8px 16px rgba(145, 149, 157, 0.3);
+}
+
+.getStartedIcon {
+  position: absolute;
+  top: -32px;
+  left: 16px;
+  height: 64px;
+  width: 64px;
+  background-color: #f5bb54;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.getStartedIcon img {
+  height: 24px;
+  width: auto;
+}
+
+.getStartedCard,
+.getStartedCardP {
+  text-align: left;
+}
+
+.cardLink {
+  margin-top: 32px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-weight: 900;
+  color: #2ca4f2;
+}
+
+.cardLink img {
+  margin-left: 16px;
+  height: 16px;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+/* Header  */
+
+/* Header Styles */
+
+.App-header {
+  background-color: #004e82;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+}
+
+.fcLogo {
+  background-image: url(../images/fcLogo.png);
+}
+
+/* index  */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* loan calc  */
+
+.loanCalculator-div {
+  margin: 64px 8%;
+}
+
+.loanCalcText .small {
+  font-size: 14px;
+}
+
+.mortgageCalculator {
+  margin-top: 32px;
+}
+
+/* Background */
+
+.mortgageCalculator ._2rRxbhZfd2m69aGyclMHup {
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+/* Form Styles */
+
+.mortgageCalculator .FhD6sRmOe8tMY0xW6D0KO {
+  padding-bottom: 32px;
+}
+
+/* Input Icon */
+
+.mortgageCalculator ._3UZinu8u1JJRVIMHioZRr5 {
+  height: 64px;
+  font-size: 24px;
+  color: #2ca4f2;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Advanced Button */
+
+.mortgageCalculator ._39yvVzrxrpb0jfSJ06VKQG {
+  display: none;
+}
+
+/* Input Container */
+
+.mortgageCalculator ._3N7LQgadYQG6Efvq5phiUY {
+  padding: 0px;
+  margin-bottom: 16px;
+}
+
+/* Input styles and Label */
+
+.mortgageCalculator .FhD6sRmOe8tMY0xW6D0KO input,
+.mortgageCalculator .FhD6sRmOe8tMY0xW6D0KO select {
+  font-family: "OpenSans", Helvetica, Arial;
+  border: 1px solid #91959d;
+  height: 64px;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-size: 24px;
+  margin: 0px;
+  padding: 0px 24px 0px 24px;
+  color: #91959d;
+  background-color: white;
+}
+
+.mortgageCalculator .FhD6sRmOe8tMY0xW6D0KO label {
+  font-weight: 900;
+  font-size: 18px;
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+  color: #004e82;
+  margin-bottom: 8px;
+}
+
+/* results */
+
+.mortgageCalculator ._3gGF3MGRKxzQZh6RczOEoz {
+  display: none;
+}
+
+.mortgageCalculator ._37q431tzwiJw837-Dlr_8F {
+  margin-top: 0;
+}
+
+.mortgageCalculator .ggtReN8zzGuVkr5-qrqOl {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  border-radius: 8px;
+  background-color: #004e82;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.mortgageCalculator ._1b3zzIo85pUJ3f_AHItArg,
+.mortgageCalculator .jAN-uedtUK0ALBwN8-1Q0 {
+  border-bottom: 0;
+}
+
+/*  Fully Paid */
+
+.mortgageCalculator ._3N7LQgadYQG6Efvq5phiUY + div {
+  text-align: center;
+  color: #91959d;
+  font-weight: 900;
+  margin-top: 32px;
+}
+
+/* React NPM Link */
+
+.mortgageCalculator ._2QxqScDSDuK4P0ny7KZKNr {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .loanCalcText {
+    text-align: center;
+  }
+
+  .loanCalculator-div {
+    margin: 0 auto;
+    max-width: 504px;
+  }
+}
+
+/* profile  */
+
+.profile-div {
+  display: flex;
+  max-width: 1024px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8%;
+  padding: 64px 0;
+}
+
+.particle-bg {
+  display: none;
+}
+
+.profileName,
+.NMLS {
+  color: #004e82;
+  margin: 0;
+}
+
+.profileName {
+  margin-top: 16px;
+}
+
+.NMLS {
+  padding-top: 6px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.troyProfilePic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(145, 149, 157, 0.3);
+}
+
+.Or {
+  text-align: center;
+  margin-top: 8px;
+  color: #575757;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .profile-background {
+    background-image: url(../images/homeBackground.png);
+    background-size: cover;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+  }
+
+  .profileP {
+    color: #575757;
+  }
+
+  .profile-div {
+    padding: 8%;
+    margin: 0 auto;
+  }
+
+  .profileName {
+    margin-top: 0px;
+  }
+
+  .profile-grid {
+    display: grid;
+    gap: 8%;
+    align-items: start;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    background: transparent;
+  }
+
+  .troyProfilePic {
+    padding-top: 0px;
+  }
+
+  div.btns {
+    display: block;
+  }
+
+  .Or {
+    text-align: center;
+    margin-top: 16px;
+    color: #575757;
+    font-size: 12px;
+  }
+
+  .buttonWhite {
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .profile-grid {
+    align-items: center;
+  }
+
+  .Or {
+    text-align: left;
+    margin-left: 128px;
+    margin-top: 24px;
+    color: #575757;
+    font-size: 12px;
+  }
+}
+
+/* reset  */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

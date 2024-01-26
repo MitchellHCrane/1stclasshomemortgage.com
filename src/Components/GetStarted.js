@@ -1,4 +1,3 @@
-import "../css/getStarted.css";
 import GetStartedItem from "../Components/GetStartedItem";
 
 function GetStarted() {
@@ -37,7 +36,9 @@ function GetStarted() {
           // btnText="Upload Documents"
         />
       </div>
-      <div><h3 className="callNow">Call 385-999-1871</h3></div>
+      <div>
+        <h3 className="callNow">Call 385-999-1871</h3>
+      </div>
     </div>
   );
 }

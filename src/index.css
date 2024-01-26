@@ -1,0 +1,711 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+  font-size: 24px;
+  font-weight: 900;
+  color: #004e82;
+  letter-spacing: 0.25px;
+}
+
+h2 {
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+  font-size: 24px;
+  font-weight: 900;
+  color: #004e82;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+  font-size: 24px;
+  font-weight: 900;
+  color: #004e82;
+  letter-spacing: 1px;
+}
+
+p,
+a,
+li {
+  font-family: "OpenSans", Helvetica, Arial;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+  color: #91959d;
+  line-height: 1.5;
+  letter-spacing: 0.75px;
+  margin-top: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #2ca4f2;
+}
+
+.btns {
+  display: flex;
+}
+
+.buttonBlue {
+  width: 100%;
+  margin-top: 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2ca4f2;
+  border: 1px solid #2ca4f2;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+  font-size: 18px;
+  font-weight: 900;
+  outline: none;
+  outline: 0;
+  padding: 8px 32px;
+  text-align: center;
+  transform: translateY(0);
+  user-select: none;
+  -webkit-user-select: none;
+  transition: 0.3s;
+}
+
+.buttonWhite {
+  width: 100%;
+  margin-top: 32px;
+  display: block;
+  margin: 32px 0px;
+  background-color: #ffffff;
+  border: 1px solid #2ca4f2;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #2ca4f2;
+  cursor: pointer;
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+  font-size: 18px;
+  font-weight: 900;
+  outline: none;
+  outline: 0;
+  padding: 8px 32px;
+  text-align: center;
+  transform: translateY(0);
+  user-select: none;
+  -webkit-user-select: none;
+  transition: 0.3s;
+}
+
+.buttonBlue:hover {
+  box-shadow: 0px 8px 16px rgba(145, 149, 157, 0.3);
+  transform: translateY(-2px);
+  /* transition: all 3s ease-in-out; */
+}
+.buttonWhite:hover {
+  box-shadow: 0px 8px 16px rgba(145, 149, 157, 0.3);
+  transform: translateY(-2px);
+  /* transition: all 3s ease-in-out; */
+}
+
+@media (max-width: 768px) {
+  .btnsContact {
+    margin: 0 8%;
+  }
+  .btns {
+    display: block;
+  }
+  .buttonBlue {
+    width: 100%;
+    margin: 16px 0 0;
+    padding: 8px 0px;
+    font-size: 16px;
+  }
+  .buttonWhite {
+    width: 100%;
+    margin: 8px 0px 0;
+    padding: 8px 0px;
+    font-size: 16px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .buttonBlue {
+    width: 288px;
+    margin: 32px 0 0;
+    padding: 8px 0px;
+    font-size: 24px;
+  }
+  .buttonWhite {
+    width: 288px;
+    margin: 24px 0px 0;
+    padding: 8px 16px;
+    font-size: 24px;
+  }
+}
+
+/* Footer  */
+
+/* Footer Styles */
+footer {
+  padding-bottom: 36px;
+  background: #004e82;
+  /* padding: 32px 8px; */
+  width: 100%;
+  margin-top: 200px;
+}
+
+.footer-div {
+  display: grid;
+  max-width: 1024px;
+}
+
+.footerGridItem {
+  margin-top: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.footerH3,
+.footerP {
+  color: #fff;
+  margin: 0;
+}
+
+.footerH3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.footerP,
+.footerP a {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+
+@media (min-width: 1024px) {
+  .footer-div {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: center;
+    text-align: center;
+    padding: 64px 0px;
+    grid-gap: 48px;
+    margin: 0 auto;
+  }
+  .footerGridItem {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+/* Get Started  */
+
+.getStarted-div {
+  background-color: #fff;
+  margin: 0 0 64px;
+}
+
+.getStartedBackground {
+  background-image: url(../images/getStartedBackground.png);
+  background-color: #2ca4f2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 64px 8% 160px;
+}
+
+.getStartedH2 {
+  font-size: 36px;
+}
+
+.grid-container {
+  max-width: 1024px;
+  margin: -96px auto 0;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+
+.callNow{
+  text-align: center;
+  font-size: 24px;
+  margin-top: 40px;
+  color: #2ca4f2;
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+/* Get started Item  */
+
+.getStartedH2,
+.getStartedP {
+  color: #fff;
+  text-align: center;
+}
+
+.getStartedP {
+  font-size: 18px;
+}
+
+.grid-item {
+  position: relative;
+  padding: 64px 16px 32px;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 32px 8%;
+  box-shadow: 0px 8px 16px rgba(145, 149, 157, 0.3);
+}
+
+.getStartedIcon {
+  position: absolute;
+  top: -32px;
+  left: 16px;
+  height: 64px;
+  width: 64px;
+  background-color: #f5bb54;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.getStartedIcon img {
+  height: 24px;
+  width: auto;
+}
+
+.getStartedCard,
+.getStartedCardP {
+  text-align: left;
+}
+
+.cardLink {
+  margin-top: 32px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-weight: 900;
+  color: #2ca4f2;
+}
+
+.cardLink img {
+  margin-left: 16px;
+  height: 16px;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+/* Header  */
+
+/* Header Styles */
+
+.App-header {
+  background-color: #004e82;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+}
+
+.fcLogo {
+  background-image: url(../images/fcLogo.png);
+}
+
+/* index  */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* loan calc  */
+.loanCalculator-div {
+  margin: 64px 8%;
+}
+
+.loanCalcText .small {
+  font-size: 14px;
+}
+
+.mortgageCalculator {
+  margin-top: 32px;
+}
+
+/* Background */
+.mortgageCalculator ._2rRxbhZfd2m69aGyclMHup {
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+/* Form Styles */
+.mortgageCalculator .FhD6sRmOe8tMY0xW6D0KO {
+  padding-bottom: 32px;
+}
+
+/* Input Icon */
+.mortgageCalculator ._3UZinu8u1JJRVIMHioZRr5 {
+  height: 64px;
+  font-size: 24px;
+  color: #2ca4f2;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Advanced Button */
+.mortgageCalculator ._39yvVzrxrpb0jfSJ06VKQG {
+  display: none;
+}
+
+/* Input Container */
+.mortgageCalculator ._3N7LQgadYQG6Efvq5phiUY {
+  padding: 0px;
+  margin-bottom: 16px;
+}
+
+/* Input styles and Label */
+.mortgageCalculator .FhD6sRmOe8tMY0xW6D0KO input,
+.mortgageCalculator .FhD6sRmOe8tMY0xW6D0KO select {
+  font-family: "OpenSans", Helvetica, Arial;
+  border: 1px solid #91959d;
+  height: 64px;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-size: 24px;
+  margin: 0px;
+  padding: 0px 24px 0px 24px;
+  color: #91959d;
+  background-color: white;
+}
+
+.mortgageCalculator .FhD6sRmOe8tMY0xW6D0KO label {
+  font-weight: 900;
+  font-size: 18px;
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+  color: #004e82;
+  margin-bottom: 8px;
+}
+
+/* results */
+.mortgageCalculator ._3gGF3MGRKxzQZh6RczOEoz {
+  display: none;
+}
+
+.mortgageCalculator ._37q431tzwiJw837-Dlr_8F {
+  margin-top: 0;
+}
+
+.mortgageCalculator .ggtReN8zzGuVkr5-qrqOl {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  border-radius: 8px;
+  background-color: #004e82;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.mortgageCalculator ._1b3zzIo85pUJ3f_AHItArg,
+.mortgageCalculator .jAN-uedtUK0ALBwN8-1Q0 {
+  border-bottom: 0;
+}
+
+/*  Fully Paid */
+.mortgageCalculator ._3N7LQgadYQG6Efvq5phiUY + div {
+  text-align: center;
+  color: #91959d;
+  font-weight: 900;
+  margin-top: 32px;
+}
+
+/* React NPM Link */
+.mortgageCalculator ._2QxqScDSDuK4P0ny7KZKNr {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .loanCalcText {
+    text-align: center;
+  }
+  .loanCalculator-div {
+    margin: 0 auto;
+    max-width: 504px;
+  }
+}
+
+/* profile  */
+.profile-div {
+  display: flex;
+  max-width: 1024px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8%;
+  padding: 64px 0;
+}
+
+.particle-bg {
+  display: none;
+}
+
+.profileName,
+.NMLS {
+  color: #004e82;
+  margin: 0;
+}
+
+.profileName {
+  margin-top: 16px;
+}
+
+.NMLS {
+  padding-top: 6px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.troyProfilePic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(145, 149, 157, 0.3);
+}
+.Or {
+  text-align: center;
+  margin-top: 8px;
+  color: #575757;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .profile-background {
+    background-image: url(../images/homeBackground.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+  }
+  .profileP {
+    color: #575757;
+  }
+
+  .profile-div {
+    padding: 8%;
+    margin: 0 auto;
+  }
+
+  .profileName {
+    margin-top: 0px;
+  }
+
+  .profile-grid {
+    display: grid;
+    gap: 8%;
+    align-items: start;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    background: transparent;
+  }
+
+  .troyProfilePic {
+    padding-top: 0px;
+  }
+  div.btns {
+    display: block;
+  }
+  .Or {
+    text-align: center;
+    margin-top: 16px;
+    color: #575757;
+    font-size: 12px;
+  }
+  .buttonWhite {
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .profile-grid {
+    align-items: center;
+  }
+  .Or {
+    text-align: left;
+    margin-left: 128px;
+    margin-top: 24px;
+    color: #575757;
+    font-size: 12px;
+  }
+}
+
+/* reset  */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
