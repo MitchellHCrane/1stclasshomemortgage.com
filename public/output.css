@@ -547,8 +547,16 @@ video {
   margin-top: 0.25rem;
 }
 
-.mt-48 {
-  margin-top: 12rem;
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.flex {
+  display: flex;
 }
 
 .list-inside {
@@ -557,6 +565,14 @@ video {
 
 .list-disc {
   list-style-type: disc;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .rounded-lg {
@@ -581,6 +597,10 @@ video {
   padding: 1.5rem;
 }
 
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -591,13 +611,28 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.text-\[\#575757\] {
+  --tw-text-opacity: 1;
+  color: rgb(87 87 87 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -605,6 +640,10 @@ video {
 }
 
 /* Global Styles */
+
+body {
+  font-family: "SourceSansPro-Black", Helvetica, Arial;
+}
 
 html {
   scroll-behavior: smooth;
@@ -744,7 +783,7 @@ a {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .buttonBlue {
     width: 288px;
     margin: 32px 0 0;
@@ -769,7 +808,6 @@ footer {
   background: #004e82;
   /* padding: 32px 8px; */
   width: 100%;
-  margin-top: 200px;
 }
 
 .footer-div {
@@ -1096,7 +1134,7 @@ body {
   max-width: 1024px;
   justify-content: center;
   align-items: center;
-  margin: 0 8%;
+  margin: 0 24px;
   padding: 64px 0;
 }
 
@@ -1151,7 +1189,7 @@ body {
   }
 
   .profile-div {
-    padding: 8%;
+    padding: 24px;
     margin: 0 auto;
   }
 
@@ -1176,13 +1214,6 @@ body {
     display: block;
   }
 
-  .Or {
-    text-align: center;
-    margin-top: 16px;
-    color: #575757;
-    font-size: 12px;
-  }
-
   .buttonWhite {
     margin-top: 16px;
   }
@@ -1202,141 +1233,15 @@ body {
   }
 }
 
-/* reset  */
+@media (min-width: 1280px) {
+  .xl\:ml-32 {
+    margin-left: 8rem;
+  }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+  .xl\:justify-start {
+    justify-content: flex-start;
+  }
 }
 
-/* HTML5 display-role reset for older browsers */
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
 
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}

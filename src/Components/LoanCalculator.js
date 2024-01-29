@@ -2,7 +2,7 @@ import MortgageCalculator from "mortgage-calculator-react";
 
 function LoanCalculator() {
   return (
-    <div className="loanCalculator-div">
+    <div className="loanCalculator-div pb-16">
       <div className="loanCalcText">
         <h2>Loan Calculator</h2>
         <p>Get an estimate of your monthly mortgage payments.</p>

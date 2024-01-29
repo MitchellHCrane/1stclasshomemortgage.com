@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer>
-      <div className="footer-div mt-48">
+      <div className="footer-div">
         <div className="footerGridItem">
           <h3 className="footerH3">Contact</h3>
           <p className="footerP">
@@ -20,7 +20,7 @@ function Footer() {
           <p className="footerP">
             Regulated by the Colorado Division of Real Estate NMLS #1843
           </p>
-          <Link to={"/privacy-policy"} className="mt-1">
+          <Link to={"/privacy-policy"} className="mt-1 text-sm underline">
             Privacy Policy
           </Link>
         </div>

@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const PrivacyPolicy = () => {
   return (
     <div className="bg-gray-100 p-6">
-      <Link to={"/"} className="mb-2 underline">
+      <Link to={"/"} className="underline">
         Back
       </Link>
-      <h1 className="text-3xl font-bold mb-4">Privacy Notice Policy</h1>
+      <h1 className="text-3xl font-bold mb-4 mt-2">Privacy Notice Policy</h1>
       <p className="mb-4">Revision Date: 10/16/2023</p>
       <h2 className="text-xl font-bold mb-2">1. Overview</h2>
       <p className="mb-4">
@@ -55,22 +55,24 @@ const PrivacyPolicy = () => {
         </li>
       </ul>
       <h2 className="text-xl font-bold mb-2">3. Policy Statement</h2>
-      <p className="mb-4">
+      <p className="mb-2">
         First Class Home Mortgage requires all employees, affiliates, and
-        service providers to comply with all consumer protection regulations
-        regarding the privacy and disclosure of consumer information. First
-        Class Home Mortgage also complies with all disclosure requirements
+        service providers to comply with all consumer protection
+        regulationsregarding the privacy and disclosure of consumer information.
+        First Class Home Mortgage also complies with all disclosure requirements
         regarding its privacy policies and practices by providing customers with
         a privacy notice that clearly describes First Class Home Mortgage's
         practice of collecting, protecting, and sharing customer&apos;s
         nonpublic personal information (NPI) with affiliates and third parties
         at the time that a customer relationship is established. Wherever local
         privacy regulations are more stringent than the requirements set forth
-        in this Policy, the more stringent requirement will be followed. First
-        Class Home Mortgage will send a copy of the privacy notice to all new
-        customers in the timeframes specified in the Privacy Rule. First Class
-        Home Mortgage will also provide a privacy notice annually during the
-        continuation of the customer relationship, if applicable.
+        in this Policy, the more stringent requirement will be followed.
+      </p>
+      <p className="mb-4">
+        First Class Home Mortgage will send a copy of the privacy notice to all
+        new customers in the timeframes specified in the Privacy Rule. First
+        Class Home Mortgage will also provide a privacy notice annually during
+        the continuation of the customer relationship, if applicable.
       </p>
       <h2 className="text-xl font-bold mb-2">4. Privacy Notice Requirements</h2>
       <p className="mb-4">
@@ -86,16 +88,20 @@ const PrivacyPolicy = () => {
           First Class Home Mortgage is required to provide an initial privacy
           notice to customers when a customer establishes a relationship with
           First Class Home Mortgage by providing any personally identifiable
-          financial information in an effort to obtain a mortgage loan. First
-          Class Home Mortgage is also required to provide a consumer a privacy
-          notice before sharing NPI with nonaffiliated third parties outside of
-          the exceptions described below. If First Class Home Mortgage
-          doesn&apos;t share information with nonaffiliated third parties, or if
-          it only shares within the exceptions, First Class Home Mortgage does
-          not have to provide a privacy notice to consumers. If First Class Home
-          Mortgage is required to provide a privacy notice to consumers, it may
-          choose to give a “short-form notice” instead of a full privacy notice.
-          The short-form notice must:
+          financial information in an effort to obtain a mortgage loan.
+        </p>
+        <p className="mb-2">
+          First Class Home Mortgage is also required to provide a consumer a
+          privacy notice before sharing NPI with nonaffiliated third parties
+          outside of the exceptions described below. If First Class Home
+          Mortgage doesn&apos;t share information with nonaffiliated third
+          parties, or if it only shares within the exceptions, First Class Home
+          Mortgage does not have to provide a privacy notice toconsumers.
+        </p>
+        <p className="mb-2">
+          If First Class Home Mortgage is required to provide a privacy notice
+          to consumers, it may choose to give a “short-form notice” instead of a
+          full privacy notice. The short-form notice must:
         </p>
         <ul className="list-disc list-inside">
           <li>
@@ -116,10 +122,13 @@ const PrivacyPolicy = () => {
           customers during the continuation of the customer relationship, if
           applicable. The annual notice must accurately describe First Class
           Home Mortgage's privacy policies and practices in effect at the time
-          the notice is sent. Annually means at least once in any period of 12
-          consecutive months during which that relationship exists. First Class
-          Home Mortgage does not send privacy notices after the relationship
-          with the customer has ended.
+          the notice is sent.
+        </p>
+        <p>
+          Annually means at least once in any period of 12 consecutive months
+          during which that relationship exists. First Class Home Mortgage does
+          not send privacy notices after the relationship with the customer has
+          ended.
         </p>
       </div>
       <div className="bg-white p-4 rounded-lg mb-4">
@@ -200,8 +209,11 @@ const PrivacyPolicy = () => {
       <div className="mb-4">
         <h2 className="text-xl font-bold mb-2">5. Opt-Out Notice</h2>
         <p>
-          that First Class Home Mortgage discloses or reserves the right to
-          disclose NPI about a consumer to a nonaffiliated third party;
+          Opt-out means a direction by the consumer that First Class Home
+          Mortgage may not disclose NPI about that consumer to a nonaffiliated
+          third party, other than as permitted by law. The opt-out notice is a
+          clear and conspicuous notice to all customers that accurately explains
+          the right to opt-out under that section. The notice states:
         </p>
         <ul className="list-disc list-inside mb-4">
           <li>
