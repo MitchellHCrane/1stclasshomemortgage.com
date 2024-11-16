@@ -1,4 +1,4 @@
-function Profile() {
+export default function Profile() {
   return (
     <div className="profile-background">
       <div className="profile-div">
@@ -31,6 +31,17 @@ function Profile() {
                   Email Us
                 </a>
               </div>
+              <p className="">
+                Need down payment assistance?{" "}
+                <a
+                  className="text-[#004e82]"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://dpa.1stclasshomemortgage.com"
+                >
+                  View Programs
+                </a>
+              </p>
             </div>
           </div>
         </div>
@@ -38,5 +49,3 @@ function Profile() {
     </div>
   );
 }
-
-export default Profile;
