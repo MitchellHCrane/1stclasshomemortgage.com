@@ -23,25 +23,21 @@ export default function Profile() {
                   Call 385-999-1871
                 </a>
               </div>
-              <div className="flex justify-center xl:justify-start xl:ml-32 items-center mt-3 text-[#575757]">
-                <h3 className="text-xs">OR</h3>
-              </div>
               <div className="buttonWhiteDiv">
                 <a href="mailto:loans@troywarner.com" className="buttonWhite">
                   Email Us
                 </a>
               </div>
-              <p className="">
-                Need down payment assistance?{" "}
+              <div className="">
                 <a
-                  className="text-[#004e82]"
+                  href="https://dpa.1stclasshomemortgage.com"
                   target="_blank"
                   rel="noreferrer"
-                  href="https://dpa.1stclasshomemortgage.com"
+                  className="buttonGreen"
                 >
-                  View Programs
+                  Down Payment Assistance
                 </a>
-              </p>
+              </div>
             </div>
           </div>
         </div>
